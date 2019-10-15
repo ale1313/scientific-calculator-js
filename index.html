@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CALCULATOR</title>
+    <link rel='stylesheet' type='text/css' href='src/styles/stylesheet.css'/>
+</head>
+<body>
+    <div id="calculator">
+        <input type="textarea" id="ans">
+        <br>
+        <div>
+            <div id='turningButtons'>
+                <input type="button" id='upperButton1' value="ON" onclick="buttonPress(value)">
+                <input type="button" id='upperButton2' value="OFF" onclick="buttonPress(value)">
+                <input type="button" id='upperButton3' value="SHIFT" onclick='buttonPress(value)'>
+            </div>
+            <input type="button" value="7" onclick='buttonPress(value)'>
+            <input type="button" value="8" onclick='buttonPress(value)'>
+            <input type="button" value="9" onclick='buttonPress(value)'>
+            <input type="button" value="C" onclick='buttonPress(value)'>
+            <input type="button" value="AC" onclick='buttonPress(value)'>
+        </div>
+        <div>
+            <input type="button" value="4" onclick='buttonPress(value)'>
+            <input type="button" value="5" onclick='buttonPress(value)'>
+            <input type="button" value="6" onclick='buttonPress(value)'>
+            <input type="button" value="*" onclick='buttonPress(value)'>
+            <input type="button" value="/" onclick='buttonPress(value)'>
+        </div>
+        <div>
+            <input type="button" value="1" onclick='buttonPress(value)'>
+            <input type="button" value="2" onclick='buttonPress(value)'>
+            <input type="button" value="3" onclick='buttonPress(value)'>
+            <input type="button" value="+" onclick='buttonPress(value)'>
+            <input type="button" value="-" onclick='buttonPress(value)'>
+        </div>
+        <div>
+            <div>
+                <a class='shift'></a>
+                <a class='shift'></a>
+                <a class='shift'></a>
+                <a class='shift'></a>
+                <a class='shift' id='memoryShift'>M</a>
+            </div>
+            <input type="button" value="0" onclick='buttonPress(value)'>
+            <input type="button" value="." onclick='buttonPress(value)'>
+            <input type="button" value="**" onclick='buttonPress(value)'>
+            <input type="button" value="=" onclick='buttonPress(value)'>
+            <input type="button" value="M+" id='memory' onclick='buttonPress(value)'>
+        </div>
+    </div>
+    <script src='output/scripts/index.js'></script>
+</body>
+</html>
